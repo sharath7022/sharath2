@@ -1,0 +1,285 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+
+.search-results {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.bus-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.bus-item h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.bus-details p {
+    margin-bottom: 5px;
+}
+
+.book-button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- More detailed styling for potential expansion (beyond original) --- */
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .booking-form {
+        grid-template-columns: 1fr; /* Stack form elements on smaller screens */
+    }
+}
+
+/* Styling for a loading state */
+.loading-indicator {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+/* Styling for error messages */
+.error-message {
+    color: #dc3545;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/* Styling for a user profile section (if implemented) */
+.user-profile {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.user-profile h3 {
+    color: #28a745;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 8px;
+}
+
+.logout-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #5a6268;
+}
+
+/* Styling for a booking details page/modal (example) */
+.booking-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.booking-details h2 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row strong {
+    font-weight: bold;
+}
+
+.confirm-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for seat selection (if implemented) */
+.seat-selection-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.seat-selection-container h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.seat-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.seat.available {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.seat.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.seat.unavailable {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    cursor: not-allowed;
+}
+
+.select-seats-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.select-seats-button:hover {
+    background-color: #1e7e34;
+}

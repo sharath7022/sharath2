@@ -1,3 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Awesome Website</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Apply a default font family for better readability */
+        body {
+            font-family: 'Inter', sans-serif; /* Fallback to generic sans-serif */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed min-h-screen flex flex-col">
+
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">MySite</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-blue-200 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-200 transition-colors">About</a></li>
+                    <li><a href="#services" class="hover:text-blue-200 transition-colors">Services</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 py-8">
+        <section id="home" class="text-center py-16 bg-white rounded-lg shadow-sm mb-8">
+            <h2 class="text-4xl font-extrabold text-blue-700 mb-4">Welcome to My Awesome Website!</h2>
+            <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+                This is a simple boilerplate HTML file, ready for your amazing content.
+                Explore the sections below.
+            </p>
+            <a href="#contact" class="inline-block bg-blue-500 hover:bg-blue-600 text-white
+                                       font-semibold py-3 px-8 rounded-full shadow-md
+                                       transition duration-300 ease-in-out transform hover:scale-105">
+                Get Started
+            </a>
+        </section>
+
+        <section id="about" class="py-8 bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">About Us</h3>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto">
+                We are dedicated to providing excellent solutions and a great user experience.
+                Our mission is to build robust and user-friendly web applications.
+            </p>
+        </section>
+
+        <section id="services" class="py-8 bg-white rounded-lg shadow-sm p-6">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">Our Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-4 border rounded-lg">Web Design</div>
+                <div class="p-4 border rounded-lg">Development</div>
+                <div class="p-4 border rounded-lg">Consulting</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 My Awesome Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
 
 <!DOCTYPE html>
